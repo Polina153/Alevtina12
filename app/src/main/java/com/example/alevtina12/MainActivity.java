@@ -62,8 +62,5 @@ public class MainActivity extends AppCompatActivity {
             String jsonNote = new GsonBuilder().create().toJson(userNotes);
             sharedPref.edit().putString(KEY, jsonNote).apply();
         });
-               /* String jsonNote = new GsonBuilder().create().toJson(note);
-        sharedPref.edit().putString(KEY, jsonNote).apply();
-*/
     }
 }
